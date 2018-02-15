@@ -1,0 +1,20 @@
+<div class="clearfix">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Time</th>
+      <th>Otp</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let c of messageList">
+      <td>{{c.Name}}</td>
+      <td>{{c.DateSent | date: 'medium'}}</td>
+      <td>{{c.Message}}</td>
+    </tr>
+    </tbody>
+
+  </table>
+</div>
+
